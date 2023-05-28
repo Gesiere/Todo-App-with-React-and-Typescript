@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.dark > body{
+  background-color: hsl(235, 24%, 19%);
+  transition: all ease-in-out 0.4s;
+}
+
+.dragging{
+  opacity: 0;
+}
+img{
+  display: block;
+}
+
+input:focus,
+input:focus-within{
+  border: none;
+  outline: none;
+}

@@ -2,7 +2,7 @@ import { Todo } from "../models/Todo";
 import checkIcon from '../assets/images/icon-check.svg'
 import { useTodoGlobalContext } from "../TodosContext";
 import crossIcon from '../assets/images/icon-cross.svg'
-import { Draggable, DragDropContext, Droppable } from "react-beautiful-dnd"
+import { Draggable} from "react-beautiful-dnd"
 
 import { useRef } from "react";
 
@@ -13,7 +13,7 @@ type propTypes = {
 
 const SingleTodo = ({prop, index}: propTypes) => {
     const {todo, isCompleted, id} = prop
-    const {setCompleted, removeTodo, reducerAction, dispatch} = useTodoGlobalContext()
+    const {setCompleted, removeTodo} = useTodoGlobalContext()
     const todoClass = 'group cursor-pointer flex items-center py-4 px-6 justify-between border-b-[1px] border-[#d2d3db] dark:border-veryDarkGrayishBlue2 border-solid'
     const completedTodo = `text-veryLightGrayishBlue dark:text-veryDarkGrayishBlue line-through ${todoClass}`
     const completedButton = `rounded-[50%] h-6 aspect-square bg-gradient-to-r from-[#57ddff] to-[#c058f3]`

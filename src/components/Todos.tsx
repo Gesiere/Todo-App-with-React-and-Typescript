@@ -2,7 +2,7 @@
 import { useTodoGlobalContext } from "../TodosContext"
 import Footer from "./Footer"
 import SingleTodo from "./SingleTodo"
-import { DragDropContext, Droppable, OnDragEndResponder } from "react-beautiful-dnd"
+import { DragDropContext, Droppable } from "react-beautiful-dnd"
 
 
 

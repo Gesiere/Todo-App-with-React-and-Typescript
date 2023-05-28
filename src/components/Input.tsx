@@ -4,7 +4,7 @@ import { useTodoGlobalContext } from "../TodosContext"
 
 
 const Input = () => {
-  const {state, addTodo} = useTodoGlobalContext()
+  const {addTodo} = useTodoGlobalContext()
   const [todo, setTodo] = useState<string>('')
 
   const handleSubmit = (e: FormEvent) => {
